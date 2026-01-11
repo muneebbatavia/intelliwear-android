@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/bluetooth_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensor Data via Bluetooth"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/app_color"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Bluetooth Status -->
+    <TextView
+        android:id="@+id/bluetooth_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Not Connected"
+        android:textColor="@color/app_color"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Temperature Reading -->
+    <TextView
+        android:id="@+id/temp_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temperature: -- °C"
+        android:padding="10dp"
+        android:background="@drawable/item_back"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Pressure Reading -->
+    <TextView
+        android:id="@+id/pressure_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pressure: -- Pa"
+        android:padding="10dp"
+        android:background="@drawable/item_back"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/avg_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Avg Temp (10 Days): -- °C"
+     />
+
+    <TextView
+        android:id="@+id/avg_pressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Avg Pressure (10 Days): -- Pa" />
+
+
+    <!-- Connect Button -->
+    <Button
+        android:id="@+id/connect_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect Bluetooth"
+        android:backgroundTint="@color/app_color"
+        android:textColor="#fff"
+        android:layout_marginTop="16dp"
+        android:paddingVertical="12dp"
+        android:textSize="16sp" />
+
+</LinearLayout>

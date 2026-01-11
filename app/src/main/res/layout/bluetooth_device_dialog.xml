@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/item_back">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Bluetooth Device"
+        android:textSize="18sp"
+        android:textColor="@color/app_color"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <ListView
+        android:id="@+id/device_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/app_color"
+        android:dividerHeight="1dp"/>
+</LinearLayout>

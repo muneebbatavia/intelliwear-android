@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/bg"
+    android:gravity="center_horizontal">
+
+    <!-- App Header -->
+    <TextView
+        android:id="@+id/ai_response_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI Health Analysis"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/app_color"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+
+    <!-- Progress Bar and Text Container (Horizontal LinearLayout) -->
+    <LinearLayout
+        android:id="@+id/progress_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+    android:layout_marginBottom="16dp">
+
+    <!-- ProgressBar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_gravity="center_vertical"/>
+
+    <!-- Text to indicate loading -->
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/app_color"
+        android:layout_marginStart="8dp"
+        android:gravity="center_vertical"/>
+</LinearLayout>
+
+    <!-- AI Response Container (ScrollView for scrollable content) -->
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="1"
+android:fillViewport="true"
+android:background="@drawable/item_back"
+android:padding="16dp">
+
+<LinearLayout
+    android:id="@+id/linearLayoutAIResponse"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1"/>
+
+</ScrollView>
+
+    <!-- Button to Proceed -->
+<Button
+android:id="@+id/reFetch_btn"
+android:layout_width="match_parent"
+android:layout_marginHorizontal="60dp"
+android:layout_height="wrap_content"
+android:text="Get New Response"
+android:textColor="#FFFFFF"
+android:backgroundTint="@color/app_color"
+android:layout_marginTop="20dp"
+android:layout_gravity="center"
+android:paddingHorizontal="30dp"
+android:paddingVertical="12dp"
+android:textSize="16sp"
+android:enabled="true"/>
+
+    </LinearLayout>
